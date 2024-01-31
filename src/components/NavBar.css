@@ -1,0 +1,156 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 7.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f0f0f0;
+}
+
+li {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  align-items: center;
+}
+.logo {
+  color: #25282b;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: 'Comfortaa', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.list-item {
+  color: #25282b;
+  font-size: 1.125em;
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.active {
+  color: #25282b;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.mobile-menu {
+  /* display: none; */
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 1.1em;
+  border: 1px solid #25282b;
+  padding: 0.2rem;
+  border-radius: 0.7rem;
+}
+.mobile-menu {
+  display: none;
+}
+
+.theme-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.125em;
+
+  gap: 0.5rem;
+}
+
+.switch {
+  cursor: pointer;
+}
+.navbar-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center; /* Center items vertically */
+}
+
+.list-item.theme-text {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Dark Theme Css */
+#dark nav {
+  background-color: var(--body-background);
+}
+
+#dark .list-item {
+  color: var(--body-color);
+}
+
+#dark .logo {
+  color: var(--body-color);
+}
+#dark .mobile-menu {
+  color: var(--body-background);
+  background-color: var(--body-color);
+}
+
+/* Mobile screen */
+@media only screen and (max-width: 767px) {
+  nav.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1.2rem 2rem;
+    position: sticky;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    display: flex;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--body-background);
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: 40%;
+    padding: 1rem 0.4rem;
+    margin-right: 2rem;
+  }
+  #dark nav ul {
+    background: var(--form-bg);
+    border: 1.5px solid var(--body-color);
+  }
+  nav ul li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav ul li a {
+    display: flex;
+    text-decoration: none;
+    border-radius: 0.4rem;
+  }
+
+  nav ul.openMenu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .list-item {
+    color: var(--body-color);
+  }
+}
