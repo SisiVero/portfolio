@@ -108,6 +108,7 @@ nav ul {
     position: sticky;
     flex-direction: row;
     align-items: center;
+    border: 2px solid red;
   }
 
   .mobile-menu {
@@ -132,20 +133,20 @@ nav ul {
     border: 1.5px solid var(--body-color);
   }
   nav ul li {
-    display: flex;
+    display: none;
     list-style: none;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
   nav ul li a {
-    display: flex;
+    display: none;
     text-decoration: none;
     border-radius: 0.4rem;
   }
 
   nav ul.openMenu {
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     align-items: center;
