@@ -32,7 +32,6 @@ hr {
   justify-content: space-between;
   flex-direction: row;
   border-radius: 1.5rem;
-  border: 2px solid red;
   box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
 }
 

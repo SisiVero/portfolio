@@ -7,11 +7,10 @@ import './NavBar.css'
 export default function NavBar({ toggleTheme, theme }) {
   const [menu, setMenu] = useState(false)
   const toggleMenu = () => {
-    setMenu(!menu)
+    setMenu((prevMenu) => !prevMenu)
   }
 
   const closeMenu = (e) => {
-    e.stopPropagation()
     setMenu(false)
   }
 
@@ -69,7 +68,11 @@ export default function NavBar({ toggleTheme, theme }) {
         </li>
         <li className="list-item theme-text">
           <label>{theme === '' ? 'Light Mode' : 'Dark Mode'}</label>
-          <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} className="switch"/>
+          <ReactSwitch
+            onChange={toggleTheme}
+            checked={theme === 'dark'}
+            className="switch"
+          />
         </li>
       </ul>
     </nav>

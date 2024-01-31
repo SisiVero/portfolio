@@ -106,9 +106,7 @@ font-size: .9em;
   nav.nav-bar {
     display: flex;
     justify-content: space-between;
-    position: sticky;
     padding: 1.2rem 2rem;
-    position: sticky;
     flex-direction: row;
     align-items: center;
   }
