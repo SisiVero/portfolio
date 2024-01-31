@@ -10,7 +10,8 @@ export default function NavBar({ toggleTheme, theme }) {
     setMenu(!menu)
   }
 
-  const closeMenu = () => {
+  const closeMenu = (e) => {
+    e.stopPropagation()
     setMenu(false)
   }
 
@@ -67,7 +68,7 @@ export default function NavBar({ toggleTheme, theme }) {
           </NavLink>
         </li>
         <li className="list-item theme-text">
-          <label>{theme === '' ? 'Dark Mode' : 'Light Mode'}</label>
+          <label>{theme === '' ? 'Light Mode' : 'Dark Mode'}</label>
           <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} className="switch"/>
         </li>
       </ul>

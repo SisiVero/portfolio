@@ -6,7 +6,7 @@
   justify-content: center;
   padding-top: 9rem;
 }
-#dark .projects-container{
+#dark .projects-container {
   background: var(--body-background);
   color: var(--body-color);
 }
@@ -16,7 +16,7 @@
   font-weight: bold;
   color: var(--font-high-emphasis, #25282b);
 }
-#dark .header{
+#dark .header {
   color: var(--body-color);
 }
 hr {
@@ -26,13 +26,13 @@ hr {
   background-color: #fdc435;
 }
 
-.project-items
 .project-items {
   margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: row;
   border-radius: 1.5rem;
+  border: 2px solid red;
   box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
 }
 
@@ -48,7 +48,7 @@ hr {
   color: var(--font-high-emphasis, #25282b);
   font-weight: 700;
 }
-#dark .project-name{
+#dark .project-name {
   color: var(--body-color);
 }
 .project-desc {
@@ -58,7 +58,7 @@ hr {
 
 .project-image {
   object-fit: cover;
-  width: 31rem;
+  width: 45%;
   height: 32.875rem;
   border-radius: 0 1.5rem 1.5rem 0;
 }
@@ -75,7 +75,7 @@ hr {
   margin-top: 1rem;
 }
 #dark .github-link,
-#dark .live-link{
+#dark .live-link {
   background: var(--button-background);
 }
 .github-link,
@@ -137,8 +137,8 @@ hr {
   .project-desc {
     line-height: 1.5;
     font-weight: normal;
-    color:  #828282;
-    font-size: .8em;
+    color: #828282;
+    font-size: 0.8em;
   }
 
   .project-image {
@@ -146,13 +146,12 @@ hr {
   }
 
   .project-image-mobile {
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
     display: flex;
     object-fit: cover;
     width: 100%;
     height: 50%;
     box-shadow: 0px 6px 64px 0px rgba(104, 130, 155, 0.1);
-
   }
   /* Links css */
   .project-links {
@@ -162,7 +161,6 @@ hr {
     color: #25282b;
     margin-top: 1rem;
     margin-bottom: 6rem;
-
   }
   .github-link,
   .live-link {
@@ -172,6 +170,4 @@ hr {
     border-radius: 0.2rem;
     color: #25282b;
   }
-
-  
 }
