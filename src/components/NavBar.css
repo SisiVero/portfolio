@@ -70,7 +70,6 @@ nav ul {
   cursor: pointer;
 }
 .navbar-list {
-  display: flex;
   gap: 2rem;
   list-style: none;
   align-items: center; /* Center items vertically */

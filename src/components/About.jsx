@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div ref={aboutRef} className="about-container">
       <div className='about-text'>
-        <h1>About me</h1>
+        <h1>About me</h1> 
         
       <img src="./about.jpg" alt="Chioma Veronica" className="about-mobile-img" />
         <p className='about-paragraph'>

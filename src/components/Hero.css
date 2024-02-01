@@ -21,9 +21,6 @@
   margin-bottom: 0;
 }
 
-.hero-img-cont {
-  width: 30%;
-}
 
 .hire-btn,
 .work-btn {
@@ -53,7 +50,7 @@
   .hero-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/public/hero.jpg');
-    padding: 0 2rem;
+    padding: 0 2rem 0;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -61,22 +58,26 @@
   }
 
   .hero-text {
-    padding-top: 8rem;
+    padding-top: 12rem;
     color: #f6f6f6;
     width: 100%;
   }
   
   .occupation {
+    padding-top: 0;
     text-transform: uppercase;
     font-size: .8em;
     margin: 0;
   }
   .hello-text{
+    margin-bottom: 0;
     font-size: 1.5em;
   }
   .intro-text{
-    margin: 3rem 0 1.5rem 0;
+    padding-top: 0;
+    margin: .6rem 0 .5rem 0;
   }
+
   .hire-btn,
   .work-btn {
     margin-right: 1rem;

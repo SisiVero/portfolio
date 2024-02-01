@@ -21,6 +21,7 @@
 }
 hr {
   margin-top: 0.4rem;
+  margin-bottom: 3rem;
   width: 6.25rem;
   height: 0.25rem;
   background-color: #fdc435;
@@ -90,7 +91,7 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .projects-container {
-    padding: 3rem 2rem 0;
+    padding: 9rem 2rem 0;
     width: 100%;
   }
   .header {
@@ -103,6 +104,7 @@ hr {
 
   hr {
     margin-top: 0.2rem;
+    margin-bottom: 1rem;
     width: 4.25rem;
     height: 0.25rem;
     background-color: #fdc435;

@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import ReactSwitch from 'react-switch'
-import { FaSun, FaMoon } from 'react-icons/fa'
 import './NavBar.css'
 
 export default function NavBar({ toggleTheme, theme }) {
   const [menu, setMenu] = useState(false)
   const toggleMenu = () => {
-    setMenu((prevMenu) => !prevMenu)
+    setMenu(!menu)
   }
 
-  const closeMenu = (e) => {
+  const closeMenu = () => {
     setMenu(false)
   }
 
   useEffect(() => {
     const handleNavClick = (e) => {
-      if (e.target.tagName === 'A' && e.target.closest('nav.nav-bar')) {
+      if (e.target.tagName === 'A' && e.target.closest('nav')) {
         closeMenu()
       }
     }

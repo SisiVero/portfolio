@@ -9,14 +9,19 @@
 .about-text {
   line-height: 1.5;
 }
+.about-paragraph{
+  margin-bottom: 2rem;
+
+}
 .about-text h1 {
   margin: 0;
   font-weight: bold;
   color: var(--font-high-emphasis, #25282b);
 }
 .about-btn {
-  padding: 0.5rem 1.5rem;
+  padding: .5rem 1.5rem;
   border-radius: 0.5rem;
+  color: var(--font-high-emphasis, #25282b);
   background: var(--brand-yellow, #fdc435);
 }
 .about-img {
@@ -34,21 +39,21 @@
   background-color: var(--body-background);
   color: var(--body-color);
 }
-#dark .about-text h1{
+#dark .about-text h1 {
   color: var(--body-color);
 }
 /* Mobile screen css */
 @media only screen and (max-width: 767px) {
   .about-container {
     gap: 0.7rem;
-    padding: 2rem 3rem 0;
+    padding: 9rem 3rem 0;
   }
 
   .about-text h1 {
     font-size: 1.4em;
   }
   .about-btn {
-    margin-top: 1.3rem;
+    margin-top: 1.5rem;
     padding: 0.7rem 1.8rem;
     border-radius: 0.5rem;
   }
@@ -65,3 +70,4 @@
     display: none;
   }
 }
+  
