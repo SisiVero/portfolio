@@ -1,16 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { NavLink } from 'react-router-dom'
-import { useForm, ValidationError } from '@formspree/react'
+import emailjs from '@emailjs/browser'
 import './Contact.css'
 import './About.css'
+import { toast } from 'react-toastify'
 
 export default function Contact({ darkTheme }) {
-  // State variables to store f
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
   const contactRef = useRef(null)
 
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_o5hy4ue',
+        'template_kqpkffp',
+        form.current,
+        'Ao45_HDhr1X7Mpdj-',
+      )
+      .then(
+        (result) => {
+          toast.success('Your message has been sent successfully!')
+          form.current.reset()
+        },
+        (error) => {
+          toast.error(
+            'An error occured. Pls check your internet connection and try again',
+          )
+        },
+      )
+  }
 
   useEffect(() => {
     if (contactRef.current) {
@@ -18,49 +38,21 @@ export default function Contact({ darkTheme }) {
     }
   }, [])
 
-  const [state, handleSubmit] = useForm('xnqepngr')
-  if (state.succeeded) {
-    return <p>Thank you for reaching out. I will respond to you soon!</p>
-  }
-  console.log(state)
-
-
-
   return (
     <div ref={contactRef} className="contact-div">
       <h1 className="contact-text">Contact me</h1>
 
-      <form
-        className="contact-form"
-        onSubmit={handleSubmit}
-      >
+      <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <label for="name">Name:</label>
         <br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-        />
-        <ValidationError prefix="Email" field="name" errors={state.errors} />
+        <input type="text" id="name" name="name" required />
         <label for="email">Email:</label>
         <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <input type="email" id="email" name="email" required />
         <label for="message">Message:</label>
         <br />
-        <textarea
-          id="message"
-          name="message"
-          required
-        />
-        <ValidationError prefix="Email" field="message" errors={state.errors} />
-        <button type="submit" disabled={state.submitting}>
+        <textarea id="message" name="message" required />
+        <button type="submit" value="Send">
           Submit
         </button>
       </form>
