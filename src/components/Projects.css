@@ -127,6 +127,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding: 0.6rem 1rem 1rem 1rem;
+    border: 2px solid red;
   }
   .project-name {
     margin: 0;
@@ -147,6 +148,7 @@ hr {
   }
 
   .project-image-mobile {
+    border: 2px solid red;
     margin-bottom: 0.8rem;
     display: flex;
     object-fit: cover;
