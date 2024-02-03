@@ -39,7 +39,7 @@ hr {
 .project-description-container {
   display: flex;
   width: 50%;
-  padding: 9.15625rem 2.43006rem 9.09375rem 3.15256rem;
+  padding: 2rem;
   flex-direction: column;
   justify-content: center;
 }
