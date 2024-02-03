@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     name: 'Learning Journal',
     description:
-      'A solo project assigned by scrimba on frontedn career path. Built with HTML and CSS. It is responsive',
+      'A solo project assigned by scrimba on frontend career path. Built with HTML and CSS. It is responsive',
     githubLink: 'https://github.com/SisiVero/learning-journal',
     liveVersionLink: 'https://visionary-semolina-39567a.netlify.app/',
     image: './my-learning-journal.jpg',
@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     name: 'Wig Dealers',
     description:
-      'Built from scratch, with ReactJs and CSS.An online maket place for just wigs. Users can create account to be able to add items to cart. Admins have higher permissions to add new wigs to the home page. There is a separate sign up page for admin, admin can navigate to dashboard to perform some actions.Responsive',
+      'Built from scratch, with ReactJs and CSS.An online market place for just wigs. Users can create account to be able to add items to cart. Admins have higher permissions to add new wigs to the home page. There is a separate sign up page for admin, admin can navigate to dashboard to perform some actions.Responsive',
     githubLink: 'https://github.com/SisiVero/wig-e-commerce',
     liveVersionLink: 'https://wig-e-commerce.vercel.app/',
     image: './wigdealers.jpg',
@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     name: 'Quizzical',
     description:
-      "This is a quizzical web app built with React.js and CSS. It was built as a part of Scrimba's Frontend Developer Career Path. It is a responsive blog site that can be viewed on Desktop and Mobile devices. It consists of two pages: Welcome page and Quiz page",
+      "This is a quizzical web app built with React.js and CSS. It was built as a part of Scrimba's Frontend Developer Career Path. It is a responsive site that can be viewed on Desktop and Mobile devices. It consists of two pages: Welcome page and Quiz page",
     githubLink: 'https://github.com/SisiVero/quizzical-app',
     liveVersionLink: 'https://cheery-parfait-37ad05.netlify.app/',
     image: './quizzical.jpg',
@@ -39,7 +39,7 @@ const projects = [
     id: 5,
     name: 'Weather App',
     description:
-      'A weather app built with data fetched from openweather api. Built with ReactJs',
+      'A weather app built with data fetched from openmapweather api. Built with ReactJs',
     githubLink: 'https://github.com/SisiVero/weather-app',
     liveVersionLink: 'https://weather-app-sisivero.vercel.app/',
     image: './weatherapp.jpg',
