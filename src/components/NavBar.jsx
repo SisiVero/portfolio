@@ -81,7 +81,7 @@ export default function NavBar({ toggleTheme, theme }) {
             activeClassName="active"
             onClick={closeMenu}
           >
-            Contacts
+            Contact
           </NavLink>
         </li>
         <li className="list-item theme-text">
