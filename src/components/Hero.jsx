@@ -10,7 +10,7 @@ export default function Hero() {
         <h1 className='hello-text'>Hello, my name is Chioma Veronica Ezezim</h1>
         <p className='intro-text'>
           A frontend developer and interface designer who builds good UI, rich
-          accessible and perfomant websites
+          accessible and performant websites
         </p>
         <button className="hire-btn"><Link to="/contact" className="hire-text" >
         Hire me

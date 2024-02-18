@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     name: 'Wig Dealers',
     description:
-      'Built from scratch, with ReactJs and CSS.An online market place for just wigs. Users can create account to be able to add items to cart. Admins have higher permissions to add new wigs to the home page. There is a separate sign up page for admin, admin can navigate to dashboard to perform some actions.Responsive',
+      'Built from scratch, with ReactJs and CSS. An online market place for just wigs. Users can create account to be able to add items to cart. Admins have higher permissions to add new wigs to the home page. There is a separate sign up page for admin, admin can navigate to dashboard to perform some actions.Responsive',
     githubLink: 'https://github.com/SisiVero/wig-e-commerce',
     liveVersionLink: 'https://wig-e-commerce.vercel.app/',
     image: './wigdealers.jpg',
