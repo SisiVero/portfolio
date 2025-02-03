@@ -85,7 +85,7 @@ export default function NavBar({ toggleTheme, theme }) {
           </NavLink>
         </li>
         <li className="list-item theme-text">
-          <label>{theme === '' ? 'Light Mode' : 'Dark Mode'}</label>
+          {/* <label>{theme === '' ? 'Light Mode' : 'Dark Mode'}</label> */}
           <ReactSwitch
             onChange={toggleTheme}
             checked={theme === 'dark'}
