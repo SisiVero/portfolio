@@ -19,7 +19,7 @@ function App() {
     setTheme((curr) => (curr === '' ? 'dark' : ''))
   }
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    // <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <Router>
           <NavBar theme={theme} toggleTheme={toggleTheme} />
@@ -35,7 +35,7 @@ function App() {
             theme={theme === 'dark' ? 'light' : 'dark'}
           />
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/"  element={<Home  />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
@@ -43,7 +43,7 @@ function App() {
           <Footer />
         </Router>
       </div>
-    </ThemeContext.Provider>
+    // </ThemeContext.Provider>
   )
 }
 

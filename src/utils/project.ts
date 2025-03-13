@@ -1,4 +1,6 @@
-const projects = [
+
+import {ProjectType} from "../types/index"
+export const projects : ProjectType[] = [
   {
     id: 1,
     name: 'Learning Journal',
@@ -91,4 +93,4 @@ const projects = [
   },
 ]
 
-export default projects
+// export default projects

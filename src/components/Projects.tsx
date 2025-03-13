@@ -1,19 +1,14 @@
 import React, { useEffect, useRef } from 'react'
-import projects from './project'
+import {projects} from '../utils/project'
 import { Link } from 'react-router-dom'
 import './Projects.css'
 
-export default function Projects({ darkTheme }) {
+export default function Projects({ }) {
   const projectsRef = useRef(null)
 
-  useEffect(() => {
-    // Scroll into view when the component mounts
-    if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' })
-    }
-  }, [])
+  
   return (
-    <div ref={projectsRef} className="projects-container">
+    <div className="projects-container">
       <h1 className="header">Projects</h1>
       <hr />
       <div className="project-card">

@@ -13,6 +13,9 @@ export default function SocialIcons() {
   const email = 'veronicaezezim@gmail.com'
   return (
     <div className="links-div">
+       <div>
+        <p className='footer-text'>Chioma Veronica &#169; {new Date().getFullYear()}</p>
+      </div>
       <div className='links'>
       <a
         href="https://github.com/SisiVero"
@@ -53,9 +56,6 @@ export default function SocialIcons() {
       <a href={`mailto:${email}`} >
         <MdEmail className="social-link" />
       </a>
-      </div>
-      <div>
-        <p className='footer-text'>Chioma Veronica &#169; {new Date().getFullYear()}</p>
       </div>
       {/* <button onClick={toggleTheme}>
         {isDarkTheme ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
