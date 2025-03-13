@@ -4,14 +4,15 @@ import './Contact.css'
 import './About.css'
 import { toast } from 'react-toastify'
 
-export default function Contact({ darkTheme }) {
-  const contactRef = useRef(null)
+export default function Contact() {
+  const contactRef = useRef <HTMLDivElement | null> (null)
 
-  const form = useRef()
+  const form = useRef <HTMLFormElement | null>(null)
 
-  const sendEmail = (e) => {
+  const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+if (!form.current) return
     emailjs
       .sendForm(
         'service_o5hy4ue',
@@ -21,8 +22,8 @@ export default function Contact({ darkTheme }) {
       )
       .then(
         (result) => {
-          toast.success('Your message has been sent successfully!')
-          form.current.reset()
+          toast.success('Your message has been sent successfully, I will respond as soon as possible. Thank you!')
+          form.current?.reset()
         },
         (error) => {
           toast.error(
@@ -34,7 +35,7 @@ export default function Contact({ darkTheme }) {
 
   useEffect(() => {
     if (contactRef.current) {
-      contactRef.current.scrollIntoView({ bahvior: 'smooth' })
+      contactRef.current.scrollIntoView({ behavior: 'smooth' })
     }
   }, [])
 
@@ -43,13 +44,13 @@ export default function Contact({ darkTheme }) {
       <h1 className="contact-text">Contact me</h1>
 
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <label for="name">Name:</label>
+        <label htmlFor="name">Name:</label>
         <br />
         <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
+        <label htmlFor="email">Email:</label>
         <br />
         <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
+        <label htmlFor="message">Message:</label>
         <br />
         <textarea id="message" name="message" required />
         <button type="submit" value="Send">

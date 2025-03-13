@@ -3,15 +3,15 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 0 10rem;
-  padding-top: 9rem;
+  margin-top: 10rem;
+  padding: 0 7rem;
 }
 .about-text {
   line-height: 1.5;
 }
 .about-paragraph{
   margin-bottom: 2rem;
-
+/* width: 60%; */
 }
 .about-text h1 {
   margin: 0;
@@ -25,13 +25,14 @@
   background: var(--brand-yellow, #fdc435);
 }
 .about-img {
-  width: 50%;
-  height: 50vh;
+  /* width: 40%; */
+  height: 40vh;
   object-fit: cover;
   border-radius: 50%;
 }
 .about-mobile-img {
   display: none;
+
 }
 
 /* Dark theme css */
