@@ -1,4 +1,4 @@
-import React from 'react'
+importunity React from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
 
@@ -12,12 +12,14 @@ export default function Hero() {
           A frontend developer and interface designer who builds good UI, rich
           accessible and performant websites
         </p>
+        <div className='hero-btns'>
         <button className="hire-btn"><Link to="/contact" className="hire-text" >
         Hire me
           </Link></button>
         <button className="work-btn">
           <Link to="/projects" className="work-link">See my work</Link>
         </button>
+          </div>
       </div>
     </div>
   )
