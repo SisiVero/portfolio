@@ -25,7 +25,7 @@ export default function Projects({ }) {
               <p className="project-description">{project.description}</p>
               <div className="project-links">
                 <a
-                  href={project.githubLink}
+                  href={project?.githubLink}
                   className="live-link"
                   target="_blank"
                   rel="noopener noreferrer"

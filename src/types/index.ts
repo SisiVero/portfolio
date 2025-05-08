@@ -13,7 +13,7 @@ export type NavBarProps ={
     id: number
     name: string
     description: string
-    githubLink: string
+    githubLink?: string
     liveVersionLink:string
     image: string
   }

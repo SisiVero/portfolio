@@ -1,8 +1,17 @@
 
 import {ProjectType} from "../types/index"
 export const projects : ProjectType[] = [
-  {
+    {
     id: 1,
+    name: 'Infinion Website',
+    description:
+      'The official website of Infinion rebuilt with a teammate, replacing a slower Next.js version with a faster, cleaner React.js implementation focused on simplicity and ease of use',
+    githubLink: 'https://www.infinion.co',
+    liveVersionLink: 'https://www.infinion.co',
+    image: './infinion.png',
+  },
+  {
+    id: 2,
     name: 'Learning Journal',
     description:
       'A solo project assigned by scrimba on frontend career path. Built with HTML and CSS. It is responsive',
@@ -11,7 +20,7 @@ export const projects : ProjectType[] = [
     image: './my-learning-journal.jpg',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Wig Dealers',
     description:
       'Built from scratch, with ReactJs and CSS. An online market place for just wigs. Users can create account to be able to add items to cart. Admins have higher permissions to add new wigs to the home page. There is a separate sign up page for admin, admin can navigate to dashboard to perform some actions.Responsive',
@@ -20,7 +29,7 @@ export const projects : ProjectType[] = [
     image: './wigdealers.jpg',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Quizzical',
     description:
       "This is a quizzical web app built with React.js and CSS. It was built as a part of Scrimba's Frontend Developer Career Path. It is a responsive site that can be viewed on Desktop and Mobile devices. It consists of two pages: Welcome page and Quiz page",
@@ -29,7 +38,7 @@ export const projects : ProjectType[] = [
     image: './quizzical.jpg',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Password Generator',
     description:
       "This is a Password Generator Web App. It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path.",
@@ -38,7 +47,7 @@ export const projects : ProjectType[] = [
     image: './passwordgenerator.jpg',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Weather App',
     description:
       'A weather app built with data fetched from openmapweather api. Built with ReactJs',
@@ -47,7 +56,7 @@ export const projects : ProjectType[] = [
     image: './weatherapp.jpg',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Color Scheme Generator',
     description:
       "This is a sample of a Color Scheme Generator. It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path",
@@ -56,7 +65,7 @@ export const projects : ProjectType[] = [
     image: './colorscheme.jpg',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Endorsement App',
     description:
       "This is a web app endorsement app. It is built using vanilla CSS, JavaScript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path. It is integrated with Firebase to store data.",
@@ -65,7 +74,7 @@ export const projects : ProjectType[] = [
     image: './endorsementapp.jpg',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Mobile Restaurant',
     description:
       "This a mobile restauarnt that displays the menu and price, and totals your order when you are done ordering. It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path.",
@@ -74,7 +83,7 @@ export const projects : ProjectType[] = [
     image: './restaurantapp.jpg',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Scoreboard',
     description:
       'This is a basketball scoreboard that displays the count when you click on any of the numbers. It is one of Scrimba Frontend Career Path solo proects. Built with HTML, CSS and Javascript.',
@@ -83,23 +92,14 @@ export const projects : ProjectType[] = [
     image: './scoreboard.jpg',
   },
   {
-    id: 10,
+    id: 11,
     name: 'Shopping Cart',
     description:
       "This a cart webApp, that is connected to firebase to help save user data(list of items). It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path",
     githubLink: 'https://github.com/SisiVero/firebase-app',
     liveVersionLink: 'https://sunny-cuchufli-91076a.netlify.app/',
     image: './cart.jpg',
-  },
-    {
-    id: 11,
-    name: 'Infinion Website',
-    description:
-      'The official website of Infinion rebuilt with a teammate, replacing a slower Next.js version with a faster, cleaner React.js implementation focused on simplicity and ease of use',
-    githubLink: 'NDA',
-    liveVersionLink: 'https://www.infinion.co',
-    image: './infinion.jpg',
-  },
+  }
 ]
 
 // export default projects
