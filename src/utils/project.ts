@@ -91,6 +91,15 @@ export const projects : ProjectType[] = [
     liveVersionLink: 'https://sunny-cuchufli-91076a.netlify.app/',
     image: './cart.jpg',
   },
+    {
+    id: 11,
+    name: 'Infinion Website',
+    description:
+      'The official website of Infinion rebuilt with a teammate, replacing a slower Next.js version with a faster, cleaner React.js implementation focused on simplicity and ease of use',
+    githubLink: 'NDA',
+    liveVersionLink: 'https://www.infinion.co',
+    image: './infinion.jpg',
+  },
 ]
 
 // export default projects
