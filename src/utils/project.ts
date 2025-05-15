@@ -99,6 +99,15 @@ export const projects : ProjectType[] = [
     githubLink: 'https://github.com/SisiVero/firebase-app',
     liveVersionLink: 'https://sunny-cuchufli-91076a.netlify.app/',
     image: './cart.jpg',
+  },
+  {
+    id: 12,
+    name: 'PrintForge',
+    description:
+      "A simple web application built with NextJs, tailwind and Typescript. It is a completion project for the Csrimba NextJs course",
+    githubLink: 'https://github.com/SisiVero/print-forge',
+    liveVersionLink: 'https://print-forge-zeta.vercel.app/',
+    image: './forge.jpg',
   }
 ]
 
