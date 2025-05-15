@@ -86,9 +86,9 @@ export default function NavBar() {
             Contact
           </NavLink>
         </li>
-        <li>
+        {/* <li>
              <Theme/>
-        </li>
+        </li> */}
         {/* <li className="list-item theme-text">
           <ReactSwitch
             onChange={toggleTheme}

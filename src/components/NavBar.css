@@ -80,6 +80,9 @@ nav ul {
   display: flex;
   align-items: center; /* Center items vertically */
 }
+  nav.nav-bar {
+    background-color: #ffffff;
+  }
 
 /* Dark Theme Css */
 /* #dark nav {
@@ -110,6 +113,7 @@ nav ul {
     flex-direction: row;
     align-items: center;
     background-color: #f0f0f0;
+    
   }
 
   .mobile-menu {

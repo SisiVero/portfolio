@@ -102,12 +102,12 @@ export const projects : ProjectType[] = [
   },
   {
     id: 12,
-    name: 'PrintForge',
+    name: 'Print Forge',
     description:
       "A simple web application built with NextJs, tailwind and Typescript. It is a completion project for the Csrimba NextJs course",
     githubLink: 'https://github.com/SisiVero/print-forge',
     liveVersionLink: 'https://print-forge-zeta.vercel.app/',
-    image: './forge.jpg',
+    image: './forge.png',
   }
 ]
 
