@@ -17,3 +17,10 @@ export type NavBarProps ={
     liveVersionLink:string
     image: string
   }
+
+  export type Theme = "light" | "dark";
+  
+  export type ThemeContextType = {
+    theme: Theme;
+    toggleTheme: () => void;
+  }

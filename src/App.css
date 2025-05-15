@@ -12,7 +12,7 @@ button{
 }
 .App{
     font-family: "Nunito", sans-serif;
-    color: #828282;
-    background-color: #F9FAFF;
+    color: var(--body_color);
+    background-color: var(--body_background);
 }
 

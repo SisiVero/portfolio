@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import ReactSwitch from "react-switch";
 import "./NavBar.css";
-import { NavBarProps } from "../types";
+import Theme from "./Theme";
 
-export default function NavBar({ toggleTheme, theme }: NavBarProps) {
+export default function NavBar() {
   const [menu, setMenu] = useState(false);
   const navRef = useRef<HTMLLinkElement | null>(null);
+
+
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -16,26 +18,24 @@ export default function NavBar({ toggleTheme, theme }: NavBarProps) {
     setMenu(false);
   };
 
-  useEffect(() => {
+  
     const handleNavClick = (e: MouseEvent) => {
       if (!navRef.current?.contains(e.target as Node)) {
         closeMenu();
       }
-    };
+   
 
-    // Attach the event listener to the entire document
     document.addEventListener("click", handleNavClick);
 
-    // Cleanup the event listener on component unmount
     return () => {
       document.removeEventListener("click", handleNavClick);
     };
-  }, []);
+  }
 
   return (
     <nav className="nav-bar" ref={navRef}>
       <p className="logo">
-        <Link to="/">Chioma Veronica</Link>{" "}
+        <Link to="/">Chioma Veronica</Link>
       </p>
       {menu ? (
         <p className="mobile-menu" onClick={toggleMenu}>
@@ -86,6 +86,16 @@ export default function NavBar({ toggleTheme, theme }: NavBarProps) {
             Contact
           </NavLink>
         </li>
+        <li>
+             <Theme/>
+        </li>
+        {/* <li className="list-item theme-text">
+          <ReactSwitch
+            onChange={toggleTheme}
+            checked={theme === "dark"}
+            className="switch"
+          />
+        </li> */}
       </ul>
     </nav>
   );

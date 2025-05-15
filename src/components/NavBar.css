@@ -5,7 +5,8 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #f0f0f0;
+  color: var(--body-color);
+  background-color: var(--body-background);
 }
 
 li {
@@ -81,21 +82,21 @@ nav ul {
 }
 
 /* Dark Theme Css */
-#dark nav {
-  background-color: var(--body-background);
+/* #dark nav {
+  background-color: var(--body_background);
 }
 
 #dark .list-item {
-  color: var(--body-color);
+  color: var(--body_color);
 }
 
 #dark .logo a {
-  color: var(--body-color);
+  color: var(--body_color);
 }
 #dark .mobile-menu {
-  color: var(--body-background);
-  background-color: var(--body-color);
-}
+  color: var(--body_background);
+  background-color: var(--body_color);
+} */
 
 /* Mobile screen */
 @media only screen and (max-width: 767px) {
